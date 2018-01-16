@@ -298,93 +298,97 @@
                  this.content = document.getElementById("content");
                  this.place = area.getAttribute("href").substring(1);
                  this.information = places[this.place];
-                 window.addEventListener("hashchange", (e)=>{e.preventDefault(); this.showByPath()});
+                 window.addEventListener("hashchange", (e) => {
+                     e.preventDefault();
+                     this.showByPath()
+                 });
              }
-              
-              showByPath(){
-                if('#' + this.place === window.location.hash){
-                  this.showInformation()
-                }
-              }
+
+             showByPath() {
+                 if ('#' + this.place === window.location.hash) {
+                     this.showInformation()
+                 }
+             }
 
              showInformation() {
-               this.cleanInformation();
-         
-               if (typeof this.information === 'undefined'){
-                 this.content.innerHTML = '<p class="message">Нет информации</p>';
-               }else{
-                 var header = this.templateOrEmpty('name_ru', '<h1 id="' + this.place + '">{{value}}</h1>');
-                 var subHeader = this.templateOrEmpty('name_en', '<p>{{value}}</p>');
-                 var description = this.templateOrEmpty('description', '{{value}}');
-                
-                 this.content.innerHTML = header + subHeader + description
-                 if (window.innerWidth > 960) {
-                    document.getElementById('content-view-point').scrollIntoView();
+                 this.cleanInformation();
+
+                 if (typeof this.information === 'undefined') {
+                     this.content.innerHTML = '<p class="message">Нет информации</p>';
                  } else {
-                    document.getElementById(this.place).scrollIntoView();
+                     var header = this.templateOrEmpty('name_ru', '<h1 id="' + this.place + '">{{value}}</h1>');
+                     var subHeader = this.templateOrEmpty('name_en', '<p>{{value}}</p>');
+                     var description = this.templateOrEmpty('description', '{{value}}');
+
+                     this.content.innerHTML = header + subHeader + description
+                     if (window.innerWidth > 960) {
+                         document.getElementById('content-view-point').scrollIntoView();
+                     } else {
+                         document.getElementById(this.place).scrollIntoView();
+                     }
                  }
-               }
              }
-         
-             cleanInformation(){
-               while (this.content.firstChild) {
-                 this.content.removeChild(this.content.firstChild);
-               }
+
+             cleanInformation() {
+                 while (this.content.firstChild) {
+                     this.content.removeChild(this.content.firstChild);
+                 }
              }
-         
-             templateOrEmpty(item, template){          
-               return this.information.hasOwnProperty(item) ? this.replaceTag(template, 'value', this.information[item]) : '';
+
+             templateOrEmpty(item, template) {
+                 return this.information.hasOwnProperty(item) ? this.replaceTag(template, 'value', this.information[item]) : '';
              }
-         
-             replaceTag(template, tag, value){
-               return template.replace(new RegExp('{{' + tag + '}}', 'g'), value);
+
+             replaceTag(template, tag, value) {
+                 return template.replace(new RegExp('{{' + tag + '}}', 'g'), value);
              }
          }
-         
-         class ResponsiveImageMap{
-           constructor (map, img, width) {
-             this.areas = map.getElementsByTagName('area');
-             this.len = this.areas.length;
-             this.img = img;
-             this.originalWidth = width;
-             this.coords = [];
-         
-             var n;
-             for (n = 0; n < this.len; n++) {
-               this.coords[n] = this.areas[n].coords.split(',');
+
+         class ResponsiveImageMap {
+             constructor(map, img, width) {
+                 this.img = img;
+                 this.originalWidth = width;
+                 this.areas = [];
+
+                 for (const area of map.getElementsByTagName('area')) {
+                     this.areas.push({
+                         element: area,
+                         originalCoords: area.coords.split(',')
+                     });
+                 }
+
+                 window.addEventListener('resize', e => this.resize(e));
+                 this.resize();
              }
-         
-             window.addEventListener('resize', e => this.resize(e));
-             this.resize();
-           }
-             
-           resize(){
-             var x = this.img.offsetWidth / this.originalWidth;           
-             for (var n = 0; n < this.len; n++) {
-               var newCoords = [];
-               var clen = this.coords[n].length;
-               for (var m = 0; m < clen; m++) {
-                   newCoords[m] = Math.round(this.coords[n][m] * x);                  
-               }
-              this.areas[n].coords = newCoords.join(',');
-             }
-             return true;
-           };
+
+             resize() {
+                 const ratio = this.img.offsetWidth / this.originalWidth;
+
+                 for (const area of this.areas) {
+                     const newCoords = [];
+                     for (const originalCoord of area.originalCoords) {
+                         newCoords.push(Math.round(originalCoord * ratio));
+                     }
+                     area.element.coords = newCoords.join(',');
+                 }
+
+                 return true;
+             };
          }
-         
-         function app(){
-           var places = placesDb;
-           var map = document.getElementById('content_map_map');
-           var image = document.getElementById('content_map_image');
-           var areas = map.getElementsByTagName('area');
-          
-           for (let i = 0; i < areas.length; i++) {
-             new MapPlace(areas[i], places);
-           }
-         
-           new ResponsiveImageMap(map, image, 864);
+
+         function app() {
+             var places = placesDb;
+             var map = document.getElementById('content_map_map');
+             var image = document.getElementById('content_map_image');
+             var areas = map.getElementsByTagName('area');
+
+             for (const area of areas) {
+                 new MapPlace(area, places);
+             }
+
+             new ResponsiveImageMap(map, image, 864);
          };
-         
+
          window.addEventListener('load', app);
       </script>
    </body>
