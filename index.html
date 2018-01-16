@@ -74,7 +74,7 @@
          body{
            margin: 2rem;
          }
-         @media (max-width: 880px) {
+         @media (max-width: 960px) {
          .main-section{
            display: block;
          }
@@ -318,7 +318,7 @@
                  var description = this.templateOrEmpty('description', '{{value}}');
                 
                  this.content.innerHTML = header + subHeader + description
-                 if (window.innerWidth > 880) {
+                 if (window.innerWidth > 960) {
                     document.getElementById('content-view-point').scrollIntoView();
                  } else {
                     document.getElementById(this.place).scrollIntoView();
