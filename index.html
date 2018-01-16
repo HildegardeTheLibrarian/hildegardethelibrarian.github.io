@@ -300,8 +300,9 @@
                  this.information = places[this.place];
                  window.addEventListener("hashchange", (e) => {
                      e.preventDefault();
-                     this.showByPath()
+                     this.showByPath();
                  });
+                 this.showByPath();                 
              }
 
              showByPath() {
@@ -312,6 +313,7 @@
 
              showInformation() {
                  this.cleanInformation();
+                 this.area.focus();
 
                  if (typeof this.information === 'undefined') {
                      this.content.innerHTML = '<p class="message">Нет информации</p>';
