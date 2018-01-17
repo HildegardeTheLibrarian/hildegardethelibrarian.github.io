@@ -7,7 +7,7 @@
       <meta name="description" content="БИБЛИОТЕКА АКАДЕМИИ ЭРИАРАТА">
       <meta name="author" content="Холекс Повелитель Воды">
 
-      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+      <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
       <style>
          h1{
            font-size: 1.5rem;
@@ -326,11 +326,9 @@
                      var description = this.templateOrEmpty('description', '{{value}}');
 
                      this.content.innerHTML = header + subHeader + description
-                     if (window.innerWidth > 960) {
-                         document.getElementById('content-view-point').scrollIntoView();
-                     } else {
-                         document.getElementById(this.place).scrollIntoView();
-                     }
+                     if (this.content.getBoundingClientRect().top <1){
+                       this.content.scrollIntoView();
+                    }
                  }
              }
 
