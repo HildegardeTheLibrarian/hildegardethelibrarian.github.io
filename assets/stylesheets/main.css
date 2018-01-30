@@ -1,0 +1,137 @@
+h1 {
+	font-size: 1.5rem;
+}
+
+h2 {
+	font-size: 1.3rem;
+}
+
+h3 {
+	font-size: 1.2rem;
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+area {
+	outline: 0;
+}
+
+a{
+	text-decoration: none;
+    color: green;
+}
+
+a:hover{
+    color: cadetblue;
+}
+
+a i{
+    font-size: 0.7rem;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+
+.image img {
+	width: 100%;
+	height: auto;
+	margin-top: 2rem;
+}
+
+.content {
+	text-align: justify;
+}
+
+.content a{  
+	display: block;
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+.content a:first-of-type{
+    padding-top:0;
+}
+
+.stamp {
+	width: 4rem;
+	vertical-align: middle;
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+header h1 {
+	font-size: 1rem;
+}
+
+header .subheader h2,
+header .subheader h3 {
+	display: inline;
+}
+
+header .subheader .path-delimeter {
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+footer {
+	text-align: center;
+	margin-top: 4rem;
+	margin-bottom: 2rem;
+}
+
+footer .official {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+footer .academy {
+	font-size: 0.8rem;
+}
+
+body {
+	font-family: 'Open Sans', serif;
+	margin: 0;
+}
+
+.left-half{
+	width: 50%;
+	position: fixed;
+}
+
+.right-half{
+	width: 50%;	
+	margin-left: 50%;
+}
+
+.left-half-inner{
+	margin-left: 2rem;
+}
+
+.right-half-inner{
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
+
+@media (max-width: 960px) {
+	.left-half{
+		width: 100%;
+		position: relative;
+	}
+	.right-half{
+		width: 100%;		
+		margin-left: 0;
+	}
+	.left-half-inner{
+		margin-right: 2rem;
+	}
+	header .subheader h2,
+	header .subheader h3 {
+		display: block;
+	}
+	header .subheader .path-delimeter {
+		display: none;
+	}
+}
