@@ -1,23 +1,171 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="https://www.e-conomic.dk/sitemap.xsl"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://hildegardethelibrarian.github.io</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://hildegardethelibrarian.github.io/countries/eriarath</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-<url><loc>https://hildegardethelibrarian.github.io/countries/azikar</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-<url><loc>https://hildegardethelibrarian.github.io/countries/amana</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-<url><loc>https://hildegardethelibrarian.github.io/countries/bereathis</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-<url><loc>https://hildegardethelibrarian.github.io/countries/vross</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-<url><loc>https://hildegardethelibrarian.github.io/countries/dyokk</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-<url><loc>https://hildegardethelibrarian.github.io/countries/kamisest</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-<url><loc>https://hildegardethelibrarian.github.io/countries/kemegh</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-<url><loc>https://hildegardethelibrarian.github.io/countries/maledis</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-<url><loc>https://hildegardethelibrarian.github.io/countries/mibbonara</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-<url><loc>https://hildegardethelibrarian.github.io/countries/taemmarath</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-<url><loc>https://hildegardethelibrarian.github.io/countries/fyhm</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-<url><loc>https://hildegardethelibrarian.github.io/countries/frolk</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-<url><loc>https://hildegardethelibrarian.github.io/countries/huramam</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-<url><loc>https://hildegardethelibrarian.github.io/countries/theeasternkingdoms</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-<url><loc>https://hildegardethelibrarian.github.io/countries/orclands</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-<url><loc>https://hildegardethelibrarian.github.io/countries/sarmas</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-<url><loc>https://hildegardethelibrarian.github.io/countries/nomandslands</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    <url>
+        <loc>https://hildegardethelibrarian.github.io</loc>
+        <image:image>
+            <image:loc>https://hildegardethelibrarian.github.io/assets/images/countries/all.jpg</image:loc>
+            <image:caption>Страны Центрального моря</image:caption>
+        </image:image>    
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://hildegardethelibrarian.github.io/countries/eriarath</loc>
+        <image:image>
+            <image:loc>https://hildegardethelibrarian.github.io/assets/images/countries/eriarath.jpg</image:loc>
+            <image:caption>Эриарат</image:caption>
+        </image:image>            
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://hildegardethelibrarian.github.io/countries/azikar</loc>
+        <image:image>
+            <image:loc>https://hildegardethelibrarian.github.io/assets/images/countries/azikar.jpg</image:loc>
+            <image:caption>Азикар</image:caption>
+        </image:image> 
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://hildegardethelibrarian.github.io/countries/amana</loc>
+        <image:image>
+            <image:loc>https://hildegardethelibrarian.github.io/assets/images/countries/amana.jpg</image:loc>
+            <image:caption>Амана</image:caption>
+        </image:image>     
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://hildegardethelibrarian.github.io/countries/bereathis</loc>
+        <image:image>
+            <image:loc>https://hildegardethelibrarian.github.io/assets/images/countries/bereathis.jpg</image:loc>
+            <image:caption>Береатис</image:caption>
+        </image:image>             
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://hildegardethelibrarian.github.io/countries/vross</loc>
+        <image:image>
+            <image:loc>https://hildegardethelibrarian.github.io/assets/images/countries/vross.jpg</image:loc>
+            <image:caption>Вросс</image:caption>
+        </image:image>        
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://hildegardethelibrarian.github.io/countries/dyokk</loc>
+        <image:image>
+            <image:loc>https://hildegardethelibrarian.github.io/assets/images/countries/dyokk.jpg</image:loc>
+            <image:caption>Диокк</image:caption>
+        </image:image>    
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://hildegardethelibrarian.github.io/countries/kamisest</loc>
+        <image:image>
+            <image:loc>https://hildegardethelibrarian.github.io/assets/images/countries/kamisest.jpg</image:loc>
+            <image:caption>Камисест</image:caption>
+        </image:image>           
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://hildegardethelibrarian.github.io/countries/kemegh</loc>
+        <image:image>
+            <image:loc>https://hildegardethelibrarian.github.io/assets/images/countries/kemegh.jpg</image:loc>
+            <image:caption>Кемегх</image:caption>
+        </image:image>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://hildegardethelibrarian.github.io/countries/maledis</loc>
+        <image:image>
+            <image:loc>https://hildegardethelibrarian.github.io/assets/images/countries/maledis.jpg</image:loc>
+            <image:caption>Маледис</image:caption>
+        </image:image>        
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://hildegardethelibrarian.github.io/countries/mibbonara</loc>
+        <image:image>
+            <image:loc>https://hildegardethelibrarian.github.io/assets/images/countries/mibbonara.jpg</image:loc>
+            <image:caption>Миббонара</image:caption>
+        </image:image>          
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://hildegardethelibrarian.github.io/countries/taemmarath</loc>
+        <image:image>
+            <image:loc>https://hildegardethelibrarian.github.io/assets/images/countries/taemmarath.jpg</image:loc>
+            <image:caption>Таэммарат</image:caption>
+        </image:image>            
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://hildegardethelibrarian.github.io/countries/fyhm</loc>
+        <image:image>
+            <image:loc>https://hildegardethelibrarian.github.io/assets/images/countries/fyhm.jpg</image:loc>
+            <image:caption>Фим</image:caption>
+        </image:image>         
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://hildegardethelibrarian.github.io/countries/frolk</loc>
+        <image:image>
+            <image:loc>https://hildegardethelibrarian.github.io/assets/images/countries/frolk.jpg</image:loc>
+            <image:caption>Фролк</image:caption>
+        </image:image>          
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://hildegardethelibrarian.github.io/countries/huramam</loc>
+        <image:image>
+            <image:loc>https://hildegardethelibrarian.github.io/assets/images/countries/huramam.jpg</image:loc>
+            <image:caption>Хурамам</image:caption>
+        </image:image>          
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://hildegardethelibrarian.github.io/countries/theeasternkingdoms</loc>      
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://hildegardethelibrarian.github.io/countries/orclands</loc>
+        <image:image>
+            <image:loc>https://hildegardethelibrarian.github.io/assets/images/countries/orclands.jpg</image:loc>
+            <image:caption>Земли Орков</image:caption>
+        </image:image>             
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://hildegardethelibrarian.github.io/countries/sarmas</loc>
+        <image:image>
+            <image:loc>https://hildegardethelibrarian.github.io/assets/images/countries/sarmas.jpg</image:loc>
+            <image:caption>Сармас</image:caption>
+        </image:image>      
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://hildegardethelibrarian.github.io/countries/nomandslands</loc>
+        <image:image>
+            <image:loc>https://hildegardethelibrarian.github.io/assets/images/countries/nomandslands.jpg</image:loc>
+            <image:caption>Земли Кочевников</image:caption>
+        </image:image>          
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
 </urlset>
